@@ -18,6 +18,13 @@ Editar
 nano /etc/openvpn/server/server.conf
 ```
 
+comenta la linea agregando un `;` para desabilitar el reenvio de paquetes a internet
+
+```shell
+;push "redirect-gateway def1 ipv6 bypass-dhcp"
+```
+
+
 ### Subredes
 
 Agregar la siguiente linea en el archivo `/etc/openvpn/server/server.conf`
